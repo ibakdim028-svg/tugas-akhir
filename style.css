@@ -1,0 +1,174 @@
+
+/* Mengatur semua elemen agar ukuran dan jaraknya lebih mudah diatur */
+* {
+    margin: 0; /* Menghilangkan jarak luar bawaan */
+    padding: 0; /* Menghilangkan jarak dalam bawaan */
+    box-sizing: border-box; /* Mengatur ukuran elemen agar lebih rapi */
+    scroll-behavior: smooth; /* Membuat perpindahan halaman lebih halus */
+}
+
+/* Mengatur tampilan dasar seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis huruf */
+    background-color: #f2f5f7; /* Memberi warna latar belakang abu-abu muda */
+    color: #333; /* Mengatur warna tulisan menjadi abu-abu gelap */
+    line-height: 1.6; /* Mengatur jarak antarbaris tulisan */
+}
+
+/* Mengatur bagian header website */
+header {
+    background-color: #173f5f; /* Memberi warna biru tua pada header */
+    color: white; /* Mengatur warna tulisan menjadi putih */
+    padding: 18px 8%; /* Memberi jarak di dalam header */
+    display: flex; /* Membuat isi header berjajar */
+    justify-content: space-between; /* Memisahkan logo dan menu */
+    align-items: center; /* Membuat isi header sejajar tengah */
+    flex-wrap: wrap; /* Membuat isi turun jika layar sempit */
+}
+
+/* Mengatur tampilan logo website */
+.logo {
+    font-size: 23px; /* Mengatur ukuran tulisan logo */
+    font-weight: bold; /* Membuat tulisan menjadi tebal */
+}
+
+/* Mengatur tampilan menu navigasi */
+nav a {
+    color: white; /* Memberi warna putih pada menu */
+    text-decoration: none; /* Menghilangkan garis bawah tulisan */
+    margin-left: 18px; /* Memberi jarak antarmenu */
+    font-size: 14px; /* Mengatur ukuran tulisan menu */
+}
+
+/* Memberikan efek ketika mouse diarahkan ke menu */
+nav a:hover {
+    color: #f6c85f; /* Mengubah warna menu menjadi kuning */
+}
+
+/* Mengatur bagian banner utama website */
+.hero {
+    background: linear-gradient(
+        rgba(10, 40, 60, 0.75),
+        rgba(10, 40, 60, 0.75)
+    ), url("https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1200"); /* Menambahkan gambar dan lapisan gelap */
+
+    background-size: cover; /* Membuat gambar memenuhi area banner */
+    background-position: center; /* Memposisikan gambar di tengah */
+    color: white; /* Mengubah tulisan menjadi putih */
+    padding: 100px 8%; /* Memberi jarak dalam banner */
+}
+
+/* Mengatur judul pada bagian banner */
+.hero h1 {
+    font-size: 40px; /* Mengatur ukuran judul */
+    margin-bottom: 15px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur paragraf pada bagian banner */
+.hero p {
+    max-width: 550px; /* Membatasi lebar paragraf */
+    margin-bottom: 20px; /* Memberi jarak bawah paragraf */
+}
+
+/* Mengatur tampilan tombol pelajari sekarang */
+.tombol {
+    display: inline-block; /* Membuat tombol mengikuti ukuran teks */
+    background-color: #f6c85f; /* Memberi warna kuning pada tombol */
+    color: #173f5f; /* Memberi warna biru pada tulisan tombol */
+    padding: 10px 20px; /* Memberi ruang dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    font-weight: bold; /* Membuat tulisan tombol tebal */
+}
+
+/* Mengatur lebar dan posisi isi halaman */
+.container {
+    width: 85%; /* Mengatur lebar isi halaman */
+    max-width: 1100px; /* Membatasi lebar maksimal halaman */
+    margin: 40px auto; /* Memberi jarak atas bawah dan membuat posisi tengah */
+}
+
+/* Mengatur jarak setiap bagian website */
+section {
+    margin-bottom: 40px; /* Memberi jarak antarbagian */
+    scroll-margin-top: 20px; /* Memberi jarak saat menuju bagian tertentu */
+}
+
+/* Mengatur tampilan judul setiap bagian */
+h2 {
+    color: #173f5f; /* Memberi warna biru tua pada judul */
+    margin-bottom: 15px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur kotak yang berisi paragraf */
+.isi {
+    background-color: white; /* Memberi warna putih pada kotak */
+    padding: 22px; /* Memberi jarak dalam kotak */
+    border-radius: 7px; /* Membuat sudut kotak melengkung */
+    box-shadow: 0 2px 8px #ddd; /* Memberi bayangan pada kotak */
+}
+
+/* Membuat susunan kartu menjadi tiga kolom */
+.cards {
+    display: grid; /* Menggunakan sistem grid */
+    grid-template-columns: repeat(3, 1fr); /* Membuat tiga kolom dengan ukuran sama */
+    gap: 18px; /* Memberi jarak antar kartu */
+}
+
+/* Mengatur tampilan setiap kartu informasi */
+.card {
+    background-color: white; /* Memberi warna putih pada kartu */
+    padding: 20px; /* Memberi jarak dalam kartu */
+    border-radius: 7px; /* Membuat sudut kartu melengkung */
+    box-shadow: 0 2px 8px #ddd; /* Memberi bayangan pada kartu */
+}
+
+/* Mengatur judul di dalam kartu */
+.card h3 {
+    color: #173f5f; /* Memberi warna biru tua pada judul kartu */
+    margin-bottom: 10px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur jarak daftar peraturan */
+ul {
+    padding-left: 22px; /* Memberi jarak daftar dari sisi kiri */
+}
+
+/* Mengatur bagian bawah website atau footer */
+footer {
+    background-color: #173f5f; /* Memberi warna biru tua pada footer */
+    color: white; /* Mengubah tulisan menjadi putih */
+    text-align: center; /* Membuat tulisan berada di tengah */
+    padding: 22px; /* Memberi jarak dalam footer */
+}
+
+/* Mengatur tampilan website ketika dibuka melalui HP */
+@media (max-width: 700px) {
+
+    /* Mengatur header agar sesuai layar HP */
+    header {
+        gap: 15px; /* Memberi jarak antarisi header */
+    }
+
+    /* Mengatur menu navigasi pada layar kecil */
+    nav a {
+        margin-left: 0; /* Menghilangkan jarak kiri menu */
+        margin-right: 10px; /* Memberi jarak kanan menu */
+        display: inline-block; /* Membuat menu lebih mudah diatur */
+    }
+
+    /* Mengecilkan judul banner pada layar HP */
+    .hero h1 {
+        font-size: 30px; /* Mengubah ukuran judul menjadi lebih kecil */
+    }
+
+    /* Mengubah kartu menjadi satu kolom pada layar HP */
+    .cards {
+        grid-template-columns: 1fr; /* Membuat kartu tersusun ke bawah */
+    }
+
+    /* Mengatur lebar isi halaman pada layar HP */
+    .container {
+        width: 90%; /* Membuat isi halaman lebih lebar di HP */
+    }
+}
